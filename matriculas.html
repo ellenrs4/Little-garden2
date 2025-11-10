@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LITTLE GARDEN - Agende uma Visita</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#699315",
+              "background-light": "#f7f8f6",
+              "background-dark": "#1c2111",
+            },
+            fontFamily: {
+              display: ["Epilogue"],
+            },
+            borderRadius: {
+              DEFAULT: "0.5rem",
+              lg: "1rem",
+              xl: "1.5rem",
+              full: "9999px",
+            },
+          },
+        },
+      };
+    </script>
+<style>
+      .form-select {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+        background-position: right 0.5rem center;
+        background-repeat: no-repeat;
+        background-size: 1.5em 1.5em;
+        padding-right: 2.5rem;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .dark .form-select {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23d1d5db' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex flex-col min-h-screen">
+   <!-- ===== HEADER ===== -->
+    <header
+      class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-border-light dark:border-border-dark">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center gap-3">
+            <!-- Substituição da logo SVG por imagem -->
+            <img src="Imagem_do_WhatsApp_de_2025-10-10_à_s__00.09.14_44e6baf0-removebg-preview (1).png" alt="Logo Little Garden" class="h-28 w-auto" />
+          </div>
+
+       
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-black dark:text-white hover:text-primary dark:hover:text-primary" href="sobrenós.html">Sobre nós</a>
+<a class="text-sm font-medium text-black dark:text-white hover:text-primary dark:hover:text-primary" href="galeria.html">Programa</a>
+<a class="text-sm font-medium text-black dark:text-white hover:text-primary dark:hover:text-primary" href="index.html">Admissões</a>
+<a class="text-sm font-medium text-black dark:text-white hover:text-primary dark:hover:text-primary" href="metodologia.html">Eventos</a>
+<a class="text-sm font-medium text-black dark:text-white hover:text-primary dark:hover:text-primary" href="matriculas.html">Contato</a>
+</nav>
+<button class="hidden md:flex items-center justify-center rounded-lg h-10 px-6 bg-primary text-white text-sm font-bold shadow-sm hover:bg-primary/90 transition-colors">
+            Agendar Visita
+          </button>
+</nav>
+</header>
+<main class="flex-grow flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-4xl grid md:grid-cols-2 gap-12 lg:gap-16 items-start">
+<div class="bg-white/50 dark:bg-black/20 p-8 rounded-xl shadow-lg space-y-8">
+<div>
+<h1 class="text-3xl font-extrabold text-gray-900 dark:text-white">
+                Agende sua visita
+              </h1>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                Preencha o formulário abaixo para conhecer a nossa escola. Estamos ansiosos para te receber!
+              </p>
+</div>
+<form action="#" class="space-y-6" method="POST">
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="name">Nome completo</label>
+<input class="mt-1 block w-full bg-background-light dark:bg-background-dark border-gray-300 dark:border-gray-700 rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm h-12 px-4" id="name" name="name" placeholder="Seu nome" type="text"/>
+</div>
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="email">Email</label>
+<input class="mt-1 block w-full bg-background-light dark:bg-background-dark border-gray-300 dark:border-gray-700 rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm h-12 px-4" id="email" name="email" placeholder="seu@email.com" type="email"/>
+</div>
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="phone">Telefone</label>
+<input class="mt-1 block w-full bg-background-light dark:bg-background-dark border-gray-300 dark:border-gray-700 rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm h-12 px-4" id="phone" name="phone" placeholder="(00) 00000-0000" type="tel"/>
+</div>
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="interest">Interesse</label>
+<select class="form-select mt-1 block w-full appearance-none bg-background-light dark:bg-background-dark border-gray-300 dark:border-gray-700 rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm h-12 px-4" id="interest" name="interest">
+<option>Selecione o interesse</option>
+<option>Matrícula</option>
+<option>Tour Virtual</option>
+<option>Outro</option>
+</select>
+</div>
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="message">Mensagem (opcional)</label>
+<textarea class="mt-1 block w-full bg-background-light dark:bg-background-dark border-gray-300 dark:border-gray-700 rounded-lg shadow-sm focus:ring-primary focus:border-primary sm:text-sm p-4" id="message" name="message" placeholder="Deixe uma mensagem..." rows="4"></textarea>
+</div>
+<div>
+<button class="w-full flex justify-center py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-bold text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors" type="submit">
+                  Enviar
+                </button>
+</div>
+</form>
+</div>
+<div class="space-y-8">
+<div>
+<h2 class="text-2xl font-bold text-gray-900 dark:text-white">Nossa Localização</h2>
+<div class="mt-4 w-full aspect-w-16 aspect-h-9 bg-cover bg-center rounded-xl shadow-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBey1Mt0zusk9_qKzI8SMG9wgfQTMnJ6jlPLZ7euRAnKGSHA02JeLPmu4bDkBElqoP3Y-tZLpqldAaNo8_TBTjkPj_Xk_sqk0RXsNlpa7yxa3ffP9NgoLii9gzDkXJ-1U8NsIypPhIv7ZlqNRGu-C0awLke7xY8j05eeC6MWiwF7FvKommn4zGy8OjtjyFK31NzGMOKfHDoO860EMY5kRA4LL3pOB4yIhee112DNeo8cS7Jo6WOjLG0pYJIA1wlVf6Hb5NAnBpvdtsb")'></div>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Rua das Flores, 123, Jardim Botânico, Cidade</p>
+</div>
+<div>
+<h2 class="text-2xl font-bold text-gray-900 dark:text-white">Fale Conosco</h2>
+<div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<a class="flex items-center justify-center gap-3 py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-bold bg-primary/20 dark:bg-primary/30 hover:bg-primary/30 dark:hover:bg-primary/40 text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">call</span>
+                      WhatsApp
+                  </a>
+<a class="flex items-center justify-center gap-3 py-3 px-4 border border-transparent rounded-lg shadow-sm text-sm font-bold bg-primary/20 dark:bg-primary/30 hover:bg-primary/30 dark:hover:bg-primary/40 text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">photo_camera</span>
+                    Instagram
+                  </a>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
